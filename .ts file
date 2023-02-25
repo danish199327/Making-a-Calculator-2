@@ -1,0 +1,17 @@
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+let num1:number =parseInt(prompt("Enter the first number: ")!);
+let num2:number =parseInt(prompt("Enter the seond number: ")!);
+let operator:string =prompt("Enter the operator(+, -, *, /):")!;
+let result; {
+    if (operator === '+') {
+        result = num1 + num2;
+    } else if (operator === '-'){ 
+        result = num1 - num2;        
+    } else if (operator === '*'){
+        result = num1 * num2;
+    } else if (operator === '/'){
+        result = num1 / num2;
+    } 
+} 
+console.log(`The Result of ${num1} ${operator} ${num2} is ${result}`);
